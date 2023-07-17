@@ -7,9 +7,10 @@ body {
   background-color: rgb(21, 22, 25);
   width: 100%;
   height: fit-content;
-  display: grid;
-  place-items: center;
-  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .appsection {
@@ -151,4 +152,109 @@ body {
   opacity: 1;
   text-decoration: none;
   color: #f7fbf9;
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) {
+  .appsection {
+    width: 100vw;
+  }
+  .head {
+    width: 100vw;
+  }
+
+  .entry {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .todoInput {
+    width: 200px;
+    margin: 5px;
+  }
+
+  .todoButton {
+    width: 100px;
+    margin: 5px;
+  }
+}
+@media screen and (max-device-width: 380px) {
+  .appsection {
+    width: 100vw;
+  }
+  .head {
+    width: 100vw;
+    font-size: 15px;
+  }
+
+  .entry {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .todoInput {
+    width: 180px;
+    margin: 5px;
+  }
+
+  .todoButton {
+    width: 80px;
+    margin: 5px;
+  }
+
+  .todo {
+    width: 250px;
+    font-size: 15px;
+    height: 38px;
+  }
+  .completeBtn,
+  .deleteBtn {
+    width: 38px;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .gfg-div {
+    width: 400px;
+    height: 200px;
+    background-color: chartreuse;
+    color: black;
+  }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (max-device-width: 320px) {
+  .appsection {
+    width: 250px;
+  }
+  .head {
+    width: 250px;
+    font-size: 15px;
+  }
+
+  .entry {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .todoInput {
+    width: 150px;
+    margin: 5px;
+  }
+
+  .todoButton {
+    width: 80px;
+    margin: 5px;
+  }
+
+  .todo {
+    width: 200px;
+    font-size: 15px;
+    height: 38px;
+  }
+  .completeBtn,
+  .deleteBtn {
+    width: 38px;
+  }
 }
