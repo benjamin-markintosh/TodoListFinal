@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(21, 22, 25);
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  place-items: center;
+  font-family: Roboto;
+}
+
+.appsection {
+  margin: 5%;
+  border-radius: 15px;
+  background: var(--offwhite, #f7fbf9);
+  display: grid;
+  width: 500px;
+  place-items: center;
+  gap: 10px;
+}
+
+.head {
+  display: grid;
+  place-items: center;
+  background: var(--main-color-1, #0ebe7f);
+  width: 500px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.greet {
+  padding: 20px;
+  color: #f7fbf9;
+  font-size: 30px;
+}
+
+.entry {
+  padding-bottom: 20px;
+}
+.todoInput {
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.todoButton {
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.todoContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoList {
+  min-width: 30%;
+  list-style: none;
+  padding-top: 20px;
+}
+
+.todo {
+  width: 300px;
+  height: 40px;
+  background-color: #0ebe7f;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.todoItem {
+  flex: 1;
+  padding-top: 10px;
+  text-align: left;
+  padding-left: 15px;
+}
+.buttons {
+  padding: 10px;
+}
+
+.task-check {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.completeBtn,
+.deleteBtn {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 20px;
+}
+
+.completeBtn {
+  background-color: greenyellow;
+  font-size: 25px;
+}
+
+.deleteBtn {
+  background-color: rgb(196, 49, 49);
+}
+
+.todoDiv {
+  margin-right: 20px;
+}
+
+.bx {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  background-color: rgb(196, 49, 49);
+  filter: blur(4px);
+}
+
+.swipe {
+  transform: translateY(8rem) rotateZ(45deg);
+  opacity: 0;
+}
+
+#today {
+  color: #f7fbf9;
+  font-weight: 200;
+}
+
+.selectDay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.onlyComplete {
+  filter: none;
+  opacity: 1;
+  text-decoration: none;
+  color: #f7fbf9;
+}

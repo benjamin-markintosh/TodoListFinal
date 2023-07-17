@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="boxicons/css/boxicons.css" />
+  </head>
+  <body>
+    <div class="appsection">
+      <section class="head">
+        <div class="greet">Hello!!</div>
+        <div class="entry">
+          <input
+            type="text"
+            id="taskEntry"
+            class="todoInput"
+            placeholder="Enter New Task"
+          />
+          <button class="todoButton" type="submit">Add Task</button>
+        </div>
+        <div class="selectDay">
+          <div class="select">
+            <select name="todos" class="filterTodo">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Tasks At Hand</option>
+            </select>
+          </div>
+          <div class="day">
+            <p id="today"></p>
+          </div>
+        </div>
+      </section>
+      <section class="taskspane">
+        <div class="todoContainer">
+          <ul class="todoList"></ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
