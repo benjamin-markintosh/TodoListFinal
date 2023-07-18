@@ -87,6 +87,8 @@ body {
   padding-top: 10px;
   text-align: left;
   padding-left: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .buttons {
   padding: 10px;

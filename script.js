@@ -185,6 +185,9 @@ function showTodos() {
     //create list elemenr
     const newTodo = document.createElement("li");
     newTodo.innerText = todo;
+    const titleAttribute = document.createAttribute("title");
+    titleAttribute.value = todo;
+    newTodo.setAttributeNode(titleAttribute);
     newTodo.classList.add("todoItem");
 
     //add list element  to div
