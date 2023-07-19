@@ -13,7 +13,7 @@ body {
 }
 
 .appsection {
-  margin-top: 5%;
+  margin-top: 3%;
   border-radius: 15px;
   background: var(--offwhite, #f7fbf9);
   display: flex;
@@ -38,7 +38,9 @@ body {
   color: #f7fbf9;
   font-size: 30px;
 }
-
+.headtitle {
+  padding-top: 30px;
+}
 .entry {
   padding-bottom: 20px;
 }
