@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", showTodos);
 
 todoButton.addEventListener("click", addTodo);
 
+todoInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    // code for enter
+    addTodo;
+  }
+});
+
 todoList.addEventListener("click", deleteCheck);
 
 filterOption.addEventListener("click", filterTodo);
@@ -112,12 +119,15 @@ function deleteCheck(e) {
   if (item.classList[0] === "deleteBtn") {
     const todo = item.parentElement;
 
-    //animation
-    todo.classList.add("swipe");
-    deleteLocalTodos(todo);
-    todo.addEventListener("transitionend", function () {
-      todo.remove();
-    });
+    if (window.confirm("Are you sure you want to delete this task?")) {
+      //animation
+      todo.classList.add("swipe");
+      deleteLocalTodos(todo);
+
+      todo.addEventListener("transitionend", function () {
+        todo.remove();
+      });
+    }
   }
 
   //check mark

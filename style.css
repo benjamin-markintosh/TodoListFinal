@@ -7,19 +7,20 @@ body {
   background-color: rgb(21, 22, 25);
   width: 100%;
   height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .appsection {
-  margin: 5%;
+  margin-top: 5%;
   border-radius: 15px;
   background: var(--offwhite, #f7fbf9);
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 500px;
-  place-items: center;
   gap: 10px;
 }
 
